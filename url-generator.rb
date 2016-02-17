@@ -2,6 +2,7 @@ require 'sinatra'
 require 'pry'
 
 class UrlGenerator < Sinatra::Base
+  set :run, true
   set :bind, '0.0.0.0'
 
   get '/list' do
