@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'pry'
 
+set :bind, '0.0.0.0'
+
 class UrlGenerator < Sinatra::Base
   get '/list' do
     prefix = params[:prefix]
